@@ -386,7 +386,7 @@ This tutorial first explained how to set up the Q&A application before it showed
 For more information about the Scalar DB please refer to:
 
 - Getting Started : https://github.com/scalar-labs/scalardb/blob/master/docs/getting-started.md
-- Design Document : https://github.com/scalar-labs/scalardb/blob/master/docs/getting-started.md
+- Design Document : https://github.com/scalar-labs/scalardb/blob/master/docs/design.md
 - Javadoc : https://scalar-labs.github.io/scalardb/javadoc/
 
 On the other hand, if you are looking for concrete implementations examples and best practices, please take a look at the Q&A application source code.
