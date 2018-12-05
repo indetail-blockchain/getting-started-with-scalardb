@@ -1,0 +1,13 @@
+#!/bin/bash
+
+case $1 in
+    up)
+        docker run -d --name qa-cassandra -v $(pwd)/database:/schema -p 9042:9042 cassandra:3.11
+    ;;
+
+    down)
+        docker rm -fv qa-cassandra
+    ;;
+
+
+esac
