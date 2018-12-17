@@ -207,7 +207,7 @@ CREATE TABLE qa.question (
 
 ### Initialize DistributedStorage
 
-To use Scalar DB, the [**DistributedStorage**](http://18.182.28.246/javadoc/com/scalar/db/storage/api/DistributedStorage.html) interface is the single point of access to the underlying database. DistributedStorage can be initiated from [Guice](https://github.com/google/guice) with StorageModule.
+To use Scalar DB, the [**DistributedStorage**](https://scalar-labs.github.io/scalardb/javadoc/com/scalar/database/api/DistributedStorage.html) interface is the single point of access to the underlying database. DistributedStorage can be initiated from [Guice](https://github.com/google/guice) with StorageModule.
 
 
 ```java
@@ -220,7 +220,7 @@ DistributedStorage storage = injector.getInstance(StorageService.class);
 
 ### Insert and update data with Put
 
-To insert a single row in the database, we will use the [**Put**](http://18.182.28.246/javadoc/com/scalar/db/storage/api/DistributedStorage.html#put-com.scalar.db.storage.api.Put-) method of the DistributedStorage object.
+To insert a single row in the database, we will use the [**Put**](https://scalar-labs.github.io/scalardb/javadoc/com/scalar/database/api/DistributedStorage.html#put-com.scalar.database.api.Put-) method of the DistributedStorage object.
 
 ```java
 // Initialize the question parameters
@@ -266,7 +266,7 @@ storage.put(put);
 
 ### Retrieve one result with Get
 
-Let's say we want to retrieve the title of the question knowing its primary key. We can use the [**Get**](http://18.182.28.246/javadoc/com/scalar/db/storage/api/DistributedStorage.html#get-com.scalar.db.storage.api.Get-) method.
+Let's say we want to retrieve the title of the question knowing its primary key. We can use the [**Get**](https://scalar-labs.github.io/scalardb/javadoc/com/scalar/database/api/DistributedStorage.html#get-com.scalar.database.api.Get-) method.
 
 ```java
 Get get = new Get(
@@ -290,7 +290,7 @@ try {
 
 ### Retrieve multiple results with Scan
 
-The [**Scan**](http://18.182.28.246/javadoc/com/scalar/db/storage/api/DistributedStorage.html#scan-com.scalar.db.storage.api.Scan-) method is used to retrieve all the records sharing the same partition key. In this example, we use it to retrieve all the questions that were created on the same day.
+The [**Scan**](https://scalar-labs.github.io/scalardb/javadoc/com/scalar/database/api/DistributedStorage.html#scan-com.scalar.database.api.Scan-) method is used to retrieve all the records sharing the same partition key. In this example, we use it to retrieve all the questions that were created on the same day.
 
 It is to be noted that ordering of results of a Scan is dependent on the underlining implementations, so you need to explicitly specify the ordering of results (ascendant or descendant) if desired. The ordering can only be performed on the clustering key.
 
