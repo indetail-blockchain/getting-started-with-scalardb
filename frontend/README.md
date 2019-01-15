@@ -1,21 +1,17 @@
-## Q&Aアプリケーションのフロントエンド
+## Q&A Application frontend
 
-#### 前提条件
+#### Prerequisite
 
-npmパッケジをインストールする
+Install the yarn package
 ```
 yarn install
 ```
 
-#### フロンエンドを実行
-
+#### Then start frontend 
 
 ```
 make
 ```
-`http://localhost:8080`で提供される
+The frontend will run at `http://localhost:8080`
 
-このコマンドはLive-reloadingをサポートしています。つまり、ソースコードを変更するとき、ウエブサイトが自動的にアップデートとされて。
-
-
-
+This command is supported Live-reloading so automatic updates web site when change source code.
