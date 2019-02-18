@@ -1,4 +1,4 @@
-development: node_modules 
+development: node_modules
 	npx webpack-dev-server --config webpack.conf.js
 
 production: node_modules
