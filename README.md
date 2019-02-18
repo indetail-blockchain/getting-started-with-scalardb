@@ -49,13 +49,13 @@ The schema files are located inside the [/database](https://github.com/scalar-la
 Storage :
 
 ```bash
-$PATH_TO_SCALARDB/tools/schema/loader -f schema.sdbql
+$PATH_TO_SCALARDB/tools/schema/loader schema.sdbql
 ```
 
 Transaction :
 
 ```bash
-$PATH_TO_SCALARDB/tools/schema/loader -f schema_transaction.sdbql
+$PATH_TO_SCALARDB/tools/schema/loader schema_transaction.sdbql
 ```
 
 Now that the database model is set up, we can focus on starting the backend exposing an API to interact with Scalar DB.
