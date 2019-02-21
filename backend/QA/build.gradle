@@ -33,8 +33,7 @@ repositories {
 
 dependencies {
     //Scalar DB library
-    compile("com.scalar-labs:scalardb:1.0.0-rc1")
-    
+    compile("com.scalar-labs:scalardb:1.0.0")
     //Spring dependencies
     compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}") {
         exclude(group: 'ch.qos.logback')
