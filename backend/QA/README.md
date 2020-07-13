@@ -1,12 +1,8 @@
-## Q&Aアプリケーションのバックエンド
+## Q&A Application backend
 
-#### アプリケーションを実行
+#### Then start backend
 
 ```
-gradle bootRun
+./gradlew bootRun
 ```
-`http://localhost:8090`で提供される
-
-
-
-
+The backend will run at `http://localhost:8090`
